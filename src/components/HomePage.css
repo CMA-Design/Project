@@ -1,0 +1,145 @@
+/* Global styles */
+body {
+    font-family: 'Life is goofy';
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FCEDA9; /* Light gray background */
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Replace with your desired color */
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .title h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333; /* Replace with your desired color */
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    margin-bottom: 20px;
+  }
+  
+  .hero-image {
+    margin-top: 20px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  /* Welcome section styles */
+  .welcome {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .welcome h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .welcome p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Pillars section styles */
+  .pillars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .pillar {
+    width: 30%; /* Adjust width for 3 columns */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .pillar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .pillar p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .pillars {
+      flex-direction: column; /* Stack pillars vertically */
+    }
+  
+    .pillar {
+      width: 90%; /* Adjust pillar width for smaller screens */
+      margin: 10px auto; /* Center pillars */
+    }
+  
+    .header nav ul {
+      flex-direction: column; /* Stack navigation items vertically */
+    }
+  
+    .header nav li {
+      margin-bottom: 10px;
+    }
+  }
