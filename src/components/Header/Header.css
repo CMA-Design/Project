@@ -7,6 +7,7 @@
     display: flex; /* Use flexbox to align logo and nav */
     justify-content: space-between; /* Space logo and nav apart */
     align-items: center; /* Vertically center logo and nav */
+    font-family: 'Public Sans', sans-serif; /* Add Public Sans font */
   }
   
   .logo {
@@ -24,11 +25,13 @@
     font-size: 24px; /* Set font size for logo text */
     font-weight: bold; /* Make logo text bold */
     margin: 0; /* Remove default margin */
+    font-family: 'Life is Goofy', cursive; /* Keep Life is Goofy font for logo text */
   }
   
   .nav {
     display: flex; /* Use flexbox to align nav links */
     justify-content: space-between; /* Space nav links apart */
+    font-family: 'Public Sans', sans-serif; /* Add Public Sans font to nav */
   }
   
   .nav ul {
@@ -42,9 +45,10 @@
   }
   
   .nav a {
-    color: #fff; /* White text color for nav links */
+    color: #E63747; /* White text color for nav links */
     text-decoration: none; /* Remove default underline */
     transition: color 0.2s ease; /* Add a smooth transition effect */
+    font-family: 'Public Sans', sans-serif; /* Add Public Sans font to nav links */
   }
   
   .nav a:hover {
@@ -54,13 +58,13 @@
   /* Media queries for responsive design */
   
   @media (max-width: 768px) {
-    .header {
+   .header {
       flex-direction: column; /* Stack logo and nav vertically on small screens */
     }
-    .nav {
+   .nav {
       flex-direction: column; /* Stack nav links vertically on small screens */
     }
-    .nav li {
+   .nav li {
       margin-right: 0; /* Remove space between nav links on small screens */
     }
   }
