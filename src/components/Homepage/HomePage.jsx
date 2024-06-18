@@ -1,10 +1,13 @@
 import React from 'react';
-import './HomePage.css'; 
+import './HomePage.css';
+import '../../fonts/Life is goofy.ttf';
+import '../../fonts/OstrichSans-Heavy.otf'; 
+import '../Header/Header';
 
 function HomePage() {
   return (
     <div className="container">
-      <header className="header">
+      {/* <header className="header">
         <div className="logo">
           <img src="logo.png" alt="Cheerful Mind Academy Logo" />
         </div>
@@ -31,7 +34,7 @@ function HomePage() {
             <li style={{ fontFamily: 'Public Sans' }}><a href="#">Gallery</a></li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <section className="hero">
         <div className="hero-content">
           <h2>WELCOME TO CHEERFUL MIND ACADEMY</h2>
