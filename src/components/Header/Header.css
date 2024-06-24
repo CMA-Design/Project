@@ -1,70 +1,89 @@
 /* Header styles */
-
 .header {
-    background-color: #FCEDA9; 
-    color: #E63747; 
-    padding: 1rem; /* Add some padding */
-    display: flex; /* Use flexbox to align logo and nav */
-    justify-content: space-between; /* Space logo and nav apart */
-    align-items: center; /* Vertically center logo and nav */
-    font-family: 'Public Sans', sans-serif; /* Add Public Sans font */
+  /* background-color: #FCEDA9; */
+  background-color:  #FCEDA9;
+  height: 10vh;
+  padding: 0px 0px;
+  color: #E63747;
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Public Sans';
+  width: 100%; /* Make the header take the full width */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* added position relative to logo */
+}
+
+.logo img {
+  width: 99.43px;
+  height: 80.6px;
+  flex-shrink: 0;
+}
+.title{
+  background-color: #FCEDA9;
+  top:60%;
+  transform: translateY(15%); /* center title vertically */
+  font-size: 50px;
+
+}
+.title h1 {
+  font-size: medium; 
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Life is Goofy';
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Public Sans';
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #E63747;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-family: 'Public Sans';
+}
+
+.nav a:hover {
+  color: #ccc;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
   }
-  
-  .logo {
-    display: flex; /* Use flexbox to align logo image and text */
-    align-items: center; /* Vertically center logo image and text */
-  }
-  
-  .logo img {
-    width: 40px; /* Set logo image width */
-    height: 40px; /* Set logo image height */
-    margin-right: 10px; /* Add some space between logo image and text */
-  }
-  
-  .logo h1 {
-    font-size: 24px; /* Set font size for logo text */
-    font-weight: bold; /* Make logo text bold */
-    margin: 0; /* Remove default margin */
-    font-family: 'Life is Goofy', cursive; /* Keep Life is Goofy font for logo text */
-  }
-  
   .nav {
-    display: flex; /* Use flexbox to align nav links */
-    justify-content: space-between; /* Space nav links apart */
-    font-family: 'Public Sans', sans-serif; /* Add Public Sans font to nav */
+    width: 100%;
   }
-  
   .nav ul {
-    list-style: none; /* Remove default bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
   .nav li {
-    margin-right: 20px; /* Add some space between nav links */
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  
-  .nav a {
-    color: #E63747; /* White text color for nav links */
-    text-decoration: none; /* Remove default underline */
-    transition: color 0.2s ease; /* Add a smooth transition effect */
-    font-family: 'Public Sans', sans-serif; /* Add Public Sans font to nav links */
-  }
-  
-  .nav a:hover {
-    color: #ccc; /* Light gray text color on hover */
-  }
-  
-  /* Media queries for responsive design */
-  
-  @media (max-width: 768px) {
-   .header {
-      flex-direction: column; /* Stack logo and nav vertically on small screens */
-    }
-   .nav {
-      flex-direction: column; /* Stack nav links vertically on small screens */
-    }
-   .nav li {
-      margin-right: 0; /* Remove space between nav links on small screens */
-    }
-  }
+}

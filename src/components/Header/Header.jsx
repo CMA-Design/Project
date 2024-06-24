@@ -7,27 +7,37 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src="logo.png" alt="Cheerful Mind Academy Logo" />
-        <h1
-          style={{
-            color: 'var(--accent-main, #E63747)',
-            textAlign: 'left',
-            fontFamily: 'Life is Goofy',
-            fontSize: '55.296px',
-            fontStyle: 'normal',
-            fontWeight: 700,
-            lineHeight: 'normal',
-            letterSpacing: '-1.106px'
-          }}
-        > Cheerful Mind Academy</h1>
+        <img src="favicon.ico" alt="Cheerful Mind Academy Logo" />
+        <div className="title">
+          <h1
+            style={{
+              color: 'var(--accent-main, #E63747)',
+              textAlign: 'left',
+              fontFamily: 'Life is Goofy',
+              fontSize: '55.296px',
+              fontStyle: 'normal',
+              fontWeight: 700,
+              lineHeight: 'normal',
+              letterSpacing: '-1.106px'
+            }}>Cheerful Mind Academy</h1>
+        </div>
       </div>
       <nav className="nav">
-        <ul>
-          <li><a href="/" style={{ fontFamily: 'Public Sans', fontSize: 18 }}>Home</a></li>
-          <li><a href="/our-programs" style={{ fontFamily: 'Public Sans', fontSize: 18 }}>Our Programs</a></li>
-          <li><a href="/after-school-programs" style={{ fontFamily: 'Public Sans', fontSize: 18 }}>After School Programs</a></li>
-          <li><a href="/testimonials" style={{ fontFamily: 'Public Sans', fontSize: 18 }}>Testimonials</a></li>
-          <li><a href="/gallery" style={{ fontFamily: 'Public Sans', fontSize: 18 }}>Gallery</a></li>
+        <ul style={{
+          color: 'var(--accent-main, #E63747)',
+          textAlign: 'center',
+          fontFamily: 'Public Sans',
+          fontSize: 22,
+          fontStyle: 'normal',
+          fontWeight: 700,
+          lineHeight: 'normal',
+          letterSpacing: '-1.28px'
+        }}>
+          <li><a href="/">Home</a></li>
+          <li><a href="/our-programs">Our Programs</a></li>
+          <li><a href="/after-school-programs">After School Programs</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/gallery">Gallery</a></li>
         </ul>
       </nav>
     </header>

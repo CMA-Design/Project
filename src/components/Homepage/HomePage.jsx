@@ -1,40 +1,13 @@
 import React from 'react';
 import './HomePage.css';
 import '../../fonts/Life is goofy.ttf';
-import '../../fonts/OstrichSans-Heavy.otf'; 
-import '../Header/Header';
+import '../../fonts/OstrichSans-Heavy.otf';
+import Header from '../Header/Header';
 
 function HomePage() {
   return (
     <div className="container">
-      {/* <header className="header">
-        <div className="logo">
-          <img src="logo.png" alt="Cheerful Mind Academy Logo" />
-        </div>
-        <div className="title">
-          <p
-            style={{
-              color: 'var(--accent-main, #E63747)',
-              textAlign: 'left',
-              fontFamily: 'Life is Goofy',
-              fontSize: '55.296px',
-              fontStyle: 'normal',
-              fontWeight: 700,
-              lineHeight: 'normal',
-              letterSpacing: '-1.106px'
-            }}
-          >CHEERFUL MIND ACADEMY</p>
-        </div>
-        <nav>
-          <ul>
-            <li style={{ fontFamily: 'Public Sans' }}><a href="#">Home</a></li>
-            <li style={{ fontFamily: 'Public Sans' }}><a href="#">Our Programs</a></li>
-            <li style={{ fontFamily: 'Public Sans' }}><a href="#">After School Programs</a></li>
-            <li style={{ fontFamily: 'Public Sans' }}><a href="#">Testimonials</a></li>
-            <li style={{ fontFamily: 'Public Sans' }}><a href="#">Gallery</a></li>
-          </ul>
-        </nav>
-      </header> */}
+      {/* <Header /> */}
       <section className="hero">
         <div className="hero-content">
           <h2>WELCOME TO CHEERFUL MIND ACADEMY</h2>
