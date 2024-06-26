@@ -57,7 +57,7 @@ nav a {
 }
 
 .banner {
-  margin-bottom: 1px;
+  /* margin-bottom: 1px; */
   font-size: 107.54px;
   color:#E63747;
   margin-top: 0;
@@ -67,10 +67,11 @@ nav a {
 }
 
 .content{
-  font-size: 37px;
-  margin-top: 0;
+  font-size: 41px;
+  margin-top: -40px;
+  letter-spacing: -0.28px;
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: 1px;
   line-height: 0.2;
   color:#237560;
 }
