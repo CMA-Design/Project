@@ -9,8 +9,16 @@ function HomePage() {
     <div className="container">
       {/* <Header /> */}
       <section className="hero">
+        <div className="images">
+          <img src="img1.png" alt="Image 1" className="image-top-left" />
+          <img src="img2.png" alt="Image 2" className="image-top-right" />
+        </div>
         <div className="banner">
           <h1>CHEERFUL MIND ACADEMY</h1>
+        </div>
+        <div className="images">
+          <img src="img3.png" alt="Image 3" className="image-bottom-left" />
+          <img src="img4.png" alt="Image 4" className="image-bottom-right" />
         </div>
         <div className="content">
           <p>WELCOME TO CHEERFUL MIND ACADEMY</p>

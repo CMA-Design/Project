@@ -31,6 +31,35 @@ body {
 .title h1 {
   margin: 0;
 }
+.images img {
+  width: 260px; /* Adjust the size as needed */
+  position: absolute;
+  z-index: -1; 
+}
+
+.image-top-left {
+  top: -6px;
+  left: -15px;
+  transform: translate(20%, 50%);
+}
+
+.image-top-right {
+  top: 10px;
+  right: -5px;
+  transform: translate(-30px, 80%);
+}
+
+.image-bottom-left {
+  bottom: -60px;
+  left: 10px;
+  transform: translate(9.6%, 50%);
+}
+
+.image-bottom-right {
+  bottom: -60px;
+  right: 10px;
+  transform: translate(9.6%, 50%);
+}
 
 nav ul {
   list-style: none;
