@@ -14,12 +14,12 @@ function Header() {
               color: 'var(--accent-main, #E63747)',
               textAlign: 'left',
               fontFamily: 'Life is Goofy',
-              fontSize: '55.296px',
+              fontSize: '34.296px',
               fontStyle: 'normal',
               fontWeight: 700,
               lineHeight: 'normal',
-              letterSpacing: '-1.106px'
-            }}>Cheerful Mind Academy</h1>
+              letterSpacing: '-0.86px'
+            }}>CHEERFUL MIND ACADEMY</h1>
         </div>
       </div>
       <nav className="nav">
@@ -27,11 +27,12 @@ function Header() {
           color: 'var(--accent-main, #E63747)',
           textAlign: 'center',
           fontFamily: 'Public Sans',
-          fontSize: 22,
+          fontSize: '17px',
           fontStyle: 'normal',
           fontWeight: 700,
           lineHeight: 'normal',
-          letterSpacing: '-1.28px'
+          letterSpacing: '-0.7px',
+          wordSpacing: '-1.2px'
         }}>
           <li><a href="/">Home</a></li>
           <li><a href="/our-programs">Our Programs</a></li>

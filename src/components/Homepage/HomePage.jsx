@@ -2,19 +2,20 @@ import React from 'react';
 import './HomePage.css';
 import '../../fonts/Life is goofy.ttf';
 import '../../fonts/OstrichSans-Heavy.otf';
-import Header from '../Header/Header';
+// import Header from '../Header/Header';
 
 function HomePage() {
   return (
     <div className="container">
       {/* <Header /> */}
       <section className="hero">
-        <div className="hero-content">
-          <h2>WELCOME TO CHEERFUL MIND ACADEMY</h2>
-          <p>A BEACON OF EARLY CHILDHOOD EDUCATION EXCELLENCE WITH A LEGACY FOR OVER 25 YEARS AND 10,000 YOUNG MINDS.</p>
+        <div className="banner">
+          <h1>CHEERFUL MIND ACADEMY</h1>
         </div>
-        <div className="hero-image">
-          <img src="https://via.placeholder.com/500x300" alt="Children playing" />
+        <div className="content">
+          <p>WELCOME TO CHEERFUL MIND ACADEMY</p>
+          <p>A BEACON OF EARLY CHILDHOOD EDUCATION EXCELLENCE </p>
+          <p>WITH A LEGACY FOR OVER 25 YEARS AND 10,000 YOUNG MINDS.</p>
         </div>
       </section>
       <section className="welcome">
