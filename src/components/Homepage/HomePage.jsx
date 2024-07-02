@@ -7,13 +7,14 @@ import '../../fonts/OstrichSans-Heavy.otf';
 function HomePage() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseOver = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseOver = () => {
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseOut = () => {
-    setIsHovered(false);
-  };
+  // const handleMouseOut = () => {
+  //   setIsHovered(false);
+  // };
+
 
   return (
     <div className="container">
@@ -34,32 +35,48 @@ function HomePage() {
           <p>WELCOME TO CHEERFUL MIND ACADEMY</p>
           <p>A BEACON OF EARLY CHILDHOOD EDUCATION EXCELLENCE </p>
           <p>WITH A LEGACY FOR OVER 25 YEARS AND 10,000 YOUNG MINDS.</p>
-          <img
-            src="Arrow.png"
-            alt="Arrow"
-            className="arrow"
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          />
-          {isHovered && (
-            <div className="arrow-text">
-              <span className="left-text">LETS</span>
-              <span className="right-text">BEGIN</span>
-            </div>
-          )}
         </div>
-      </section>
-      <section className="welcome">
         <div className='Border'>
           <svg xmlns="http://www.w3.org/2000/svg" width="1347" height="1101" viewBox="0 0 1920 1101" fill="none">
             <path d="M122.437 42.3259C97.0395 44.5734 28.8182 35.6524 -2.11774 30.9109L2.83718e-05 1100.05H1922.7L1920 26.0616C1925.36 25.363 1695.19 25.4328 1660.26 31.3013C1616.59 38.6369 1461.9 48.9407 1366.77 40.6396C1290.67 33.9987 1084.91 24.7994 991.545 21.0299C967.74 21.1361 911.204 23.8992 875.497 34.1012C839.79 44.3032 797.707 49.6167 781.128 50.9983C749.566 54.2927 671.967 54.3139 614.071 28.0438C556.174 1.77365 487.519 -0.630809 460.428 1.45073C448.029 4.50325 406.778 13.3237 325.031 19.7985C160.059 25.5948 154.465 36.707 122.437 42.3259Z" fill="#FFCA32"/>
           </svg>
         </div>
-        <button className="welcome-button" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        <div 
+          onMouseOver={()=>{setIsHovered(true)}} 
+          onMouseOut={()=>{setIsHovered(false)}}
+          className="arrow-button"
+        >
+          {isHovered && (
+            <div className="arrow-text">
+              {Array.from("LET'S").map((letter, index) => (
+                <span key={index} className="left-text" style={{ animationDelay: `${index * 0.1}s` }}>
+                  {letter}
+                </span>
+              ))}
+            </div>
+          )}
+          <img
+            src="Arrow.png"
+            alt="Arrow"
+            className="arrow"
+          />
+          {isHovered && (
+            <div className="arrow-text">
+              {Array.from("BEGIN").map((letter, index) => (
+                <span key={index} className="right-text" style={{ animationDelay: `${index * 0.1}s` }}>
+                  {letter}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+      <section className="welcome">
+        <button className="welcome-button" onMouseOver={()=>{setIsHovered(true)}} onMouseOut={()=>{setIsHovered(false)}}>
           <span className="welcome-text">WELCOME</span>
         </button>
-          <h2>"WHERE PLAY IS PURPOSEFUL AND LEARNING IS PLAYFUL"</h2>
-          <p>Our philosophy revolves around the idea that children learn best through play. Play is not just a way for children to pass the time; it is their way of understanding the world, experimenting with ideas, and developing crucial skills. We embrace this philosophy wholeheartedly and weave it into every aspect of our curriculum and daily activities.</p>
+        <h2>"WHERE PLAY IS PURPOSEFUL AND LEARNING IS PLAYFUL"</h2>
+        <p>Our philosophy revolves around the idea that children learn best through play. Play is not just a way for children to pass the time; it is their way of understanding the world, experimenting with ideas, and developing crucial skills. We embrace this philosophy wholeheartedly and weave it into every aspect of our curriculum and daily activities.</p>
       </section>
       <section className="pillars">
         <div className="pillar">
@@ -93,7 +110,7 @@ function HomePage() {
         <h2>Nurturing a Vibrant Community</h2>
         <p>We instill in each child a love for learning, curiosity, and a foundation for lifelong success. Our unique blend of the play way method and Montessori approach creates a joyful, engaging, and meaningful learning environment where children thrive, explore, and develop a lifelong love for learning.</p>
       </section>
-    </div>
+    </div> 
   );
 }
 
