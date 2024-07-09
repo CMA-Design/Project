@@ -1,0 +1,146 @@
+.playgroup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .playgroup-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .playgroup-title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .playgroup-age {
+    font-size: 24px;
+  }
+  
+  .playgroup-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+  }
+  
+  .playgroup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .playgroup-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .playgroup-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .playgroup-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .playgroup-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .playgroup-description-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .playgroup-description-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .playgroup-description-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .playgroup-description-bullet {
+    margin-right: 10px;
+  }
+  
+  .playgroup-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+  }
+  
+  .playgroup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .playgroup-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+  }
+  
+  .playgroup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .playgroup-button-icon {
+    margin-right: 10px;
+    font-size: 24px;
+  }

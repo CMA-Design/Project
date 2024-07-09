@@ -1,0 +1,134 @@
+.pre-nursery-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .pre-nursery-left {
+    width: 50%;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .pre-nursery-right {
+    width: 50%;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+  }
+  
+  .pre-nursery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pre-nursery-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .pre-nursery-header p {
+    font-size: 24px;
+  }
+  
+  .pre-nursery-skills-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .pre-nursery-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pre-nursery-skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .pre-nursery-right-content {
+    padding-left: 20px;
+  }
+  
+  .pre-nursery-right-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .pre-nursery-right-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .pre-nursery-right-skill {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pre-nursery-right-skill-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+  }
+  
+  .pre-nursery-right-skill p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .pre-nursery-right-image {
+    width: 100%;
+    height: 400px;
+    background-color: #ccc;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .pre-nursery-right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .playgroup-button,
+  .nursery-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .playgroup-button {
+    align-self: flex-start;
+  }
+  
+  .nursery-button {
+    align-self: flex-end;
+  }
+  
+  .playgroup-icon,
+  .nursery-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
