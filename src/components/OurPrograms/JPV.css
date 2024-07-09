@@ -1,0 +1,71 @@
+.jpv-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .jpv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .jpv-title {
+    text-align: center;
+  }
+  
+  .jpv-description {
+    padding: 20px;
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .jpv-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    margin-right: 10px;
+  }
+  
+  .jpv-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .jpv-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+  }
+  
+  .jpv-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .jpv-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .jpv-button {
+    background-color: #fd7e14;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .jpv-button:hover {
+    background-color: #ffc107;
+  }

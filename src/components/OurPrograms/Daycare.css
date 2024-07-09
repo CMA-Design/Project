@@ -1,0 +1,123 @@
+.daycare-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .daycare-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .daycare-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .daycare-age {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .daycare-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .daycare-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+  }
+  
+  .daycare-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .daycare-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .daycare-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .daycare-right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  
+  .daycare-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .daycare-feature-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .daycare-feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .daycare-feature-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .daycare-image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .daycare-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .daycare-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .daycare-footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .daycare-footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .daycare-footer-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }

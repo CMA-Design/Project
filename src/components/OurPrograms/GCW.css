@@ -1,0 +1,112 @@
+.GCW {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .GCW-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .GCW-header {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .GCW-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .GCW-subtitle {
+    font-size: 16px;
+  }
+  
+  .GCW-content {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .GCW-section {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .GCW-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .GCW-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .GCW-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .GCW-point {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .GCW-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .GCW-left {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .GCW-right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .GCW-arrow {
+    font-size: 24px;
+    margin-right: 10px;
+  }
