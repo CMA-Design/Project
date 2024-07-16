@@ -2,19 +2,50 @@ import React from 'react';
 import { useState } from 'react';
 import './HomePage.css';
 import '../../fonts/Life is goofy.ttf';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import '../../fonts/OstrichSans-Heavy.otf';
 
 function HomePage() {
+
   const [isHovered, setIsHovered] = useState(false);
 
-  // const handleMouseOver = () => {
-  //   setIsHovered(true);
-  // };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+  }
 
-  // const handleMouseOut = () => {
-  //   setIsHovered(false);
-  // };
+  function CustomNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <img
+        src="Frame 24.png"
+        alt="Next Arrow"
+        className={className}
+        style={{ ...style, display: 'block', margin: '90 auto', width: '80px', height: '100px', marginRight: '-64px' }}
+        onClick={onClick}
+      />
+    );
+  }
 
+  function CustomPrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <img
+        src="Frame 23.png"
+        alt="Previous Arrow"
+        className={className}
+        style={{ ...style, display: 'block', margin: '0 auto', width: '80px', height: '100px', marginLeft:'-40px' }}
+        onClick={onClick}
+      />
+    );
+  }
 
   return (
     <div className="container">
@@ -82,19 +113,49 @@ function HomePage() {
         </button>
         <h2>"WHERE PLAY IS PURPOSEFUL AND LEARNING IS PLAYFUL"</h2>
         <p>Our philosophy revolves around the idea that children learn best through play. Play is not just a way for children to pass the time; it is their way of understanding the world, experimenting with ideas, and developing crucial skills. We embrace this philosophy wholeheartedly and weave it into every aspect of our curriculum and daily activities.</p>
-        <div className="pillar">
-        </div>
-        <div className="pillar">
-          <h3>PLAY-BASED APPROACH</h3>
-          <p>We believe in the power of play as a learning tool. Through imaginative play, children learn to develop social skills, and express their creativity. </p>
-        </div>
-        <div className="pillar">
-          <h3>CULTURAL DIVERSITY</h3>
-          <p>We celebrate diversity and foster a global perspective by preparing children to be global citizens. With respect for different cultures, beliefs, languages, and perspectives and backgrounds, we encourage children to be open-minded and tolerant. </p>
-        </div>
-        <div className="pillar">
-          <h3>1:5 STUDENT TEACHER RATIO</h3>
-          <p>Our small class sizes ensure that every child receives individual attention and care. We provide a supportive and stimulating environment for each child’s learning journey.</p>
+        <div className='Cards'>
+          <Slider {...settings}>
+            <div className='Card'>
+              <img src="CardImg1.png" alt="Image 1" className="CardImage" />
+              <h4>INQUIRY-BASED LEARNING</h4>
+              <p>Our curriculum is built around inquiry, encouraging children to ask questions, investigate, and make discoveries through hands-on experiences.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg2.png" alt="Image 2" className="CardImage" />
+              <h4>PLAY-BASED APPROACH</h4>
+              <p>We believe in the power of play as a natural and effective way for children to learn, develop social skills, and express their creativity.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg3.png" alt="Image 3" className="CardImage" />
+              <h4>CULTURAL DIVERSITY</h4>
+              <p>We celebrate diversity and promote cultural understanding, preparing children to be global citizens with respect for different perspectives and backgrounds.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg4.png" alt="Image 3" className="CardImage" />
+              <h4>1:5 STUDENT TEACHER RATIO</h4>
+              <p>Our small class sizes ensure personalised attention, meaningful interactions, and individualised support for every child's learning journey.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg5.png" alt="Image 5" className="CardImage"/>
+              <h4>ECOLOGICAL LEARNING</h4>
+              <p>We instill a sense of environmental responsibility through nature-based learning experiences, gardening activities, and lessons on conservation, nurturing a deep connection with the natural world.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg6.png" alt="Image 5" className="CardImage"/>
+              <h4>HOLISTIC EDUCATION</h4>
+              <p>We nurture the physical, emotional, social, and cognitive development of each child, providing a well-rounded education that prepares them for future challenges and opportunities.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg7.png" alt="Image 5" className="CardImage"/>
+              <h4>SOCIAL-EMOTIONAL LEARNING</h4>
+              <p>Our curriculum emphasises social-emotional skills such as empathy, cooperation, resilience, fostering positive relationships, emotional well-being, and effective communication among students.</p>
+            </div>
+            <div className='Card'>
+              <img src="CardImg8.png" alt="Image 5" className="CardImage"/>
+              <h4>PARENT PARTNERSHIP</h4>
+              <p>We believe fostering partnerships with parents, involving child's learning. Through collaboration, shared decision-making, create supportive community.</p>
+            </div>
+          </Slider>
         </div>
         <div className='Border3'>
           <svg xmlns="http://www.w3.org/2000/svg" width="1370" height="1100" viewBox="0 0 1920 121" fill="none">
