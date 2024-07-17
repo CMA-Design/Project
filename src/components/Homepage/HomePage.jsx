@@ -158,11 +158,11 @@ function HomePage() {
           </Slider>
         </div>
       </section>
-      <section className='Our Philosophy'>
+      <section className='Our_Philosophy'>
         <button className="ourp-button" onMouseOver={()=>{setIsHovered(true)}} onMouseOut={()=>{setIsHovered(false)}}>
           <span className="ourp-text">OUR PHILOSOPHY</span>
         </button>
-        <h2>Nurturing a Vibrant Community</h2>
+        <h1>Nurturing a Vibrant Community</h1>
         <p>We instill in each child a love for learning, curiosity, and a foundation for lifelong success. Our unique blend of the play way method and Montessori approach creates a joyful, engaging, and meaningful learning environment where children thrive, explore, and develop a lifelong love for learning.</p>
         <div className='Border3'>
           <svg xmlns="http://www.w3.org/2000/svg" width="1370" height="1100" viewBox="0 0 1920 121" fill="none">
@@ -170,10 +170,10 @@ function HomePage() {
           </svg>
         </div>
       </section>
-      <section className='Our Programs'>
+      <section className='Our_Programs'>
 
       </section>
-      <section className='AS Programs'>
+      <section className='AS_Programs'>
         <div className='Border4'>
           <svg xmlns="http://www.w3.org/2000/svg" width="1347" height="1101" viewBox="0 0 1920 1101" fill="#316ADF">
             <path d="M1131.15 130.904C1057.14 135.323 1009.87 137.445 965.391 138.328C916.266 139.301 839.19 137.533 795.915 134.439C747.905 131.08 740.94 129.843 735.74 123.567C732.768 120.12 729.611 118.352 724.132 117.38C722.46 117.026 703.423 115.965 681.879 114.993C495.223 106.596 429.197 101.469 385.458 91.8343C371.529 88.829 361.964 84.4978 363.078 81.6693C363.357 80.9621 363.171 80.697 362.707 80.9621C362.15 81.2273 361.778 80.8737 361.778 80.0782C361.778 74.8631 336.705 69.9131 250.806 57.9802C232.512 55.4168 178.651 46.8428 166.764 44.633C148.842 41.1857 134.262 37.65 118.29 32.7885C95.6309 25.9823 18.6512 8.20485 17.8154 9.08877C11.4662 7.02134 -0.0159912 3.20817 -2.56726 1.12151L20.0399 0.967366H495.548H971.055C1921.98 0.967366 1923.55 -1.15108 1923.27 0.881933C1923.08 2.47299 1916.78 7.15479 1894.49 17.7618C1853.72 37.2081 1812.49 53.4722 1770.05 66.6426C1705.14 86.796 1673.1 91.8343 1638.19 87.238C1631.5 86.354 1624.44 85.9121 1622.4 86.2656C1620.36 86.5308 1611.16 88.7406 1601.97 91.1272C1502.24 117.291 1368.7 133.644 1264.88 132.495C1236.18 132.141 1233.86 132.053 1227.92 130.196C1221.79 128.163 1206.65 126.484 1200.34 127.014C1198.57 127.191 1188.54 127.721 1178.05 128.252C1167.55 128.782 1146.47 130.02 1131.15 130.904Z" fill="#316ADF"/>
@@ -184,7 +184,9 @@ function HomePage() {
 
       </section>
       <section className='Testimonials'>
-
+        <div className='Lines'>
+          <img src="Lines.png" alt="Image 1" className='Line'/>
+        </div>
       </section>
       <section className='FAQ'>
         <div className='Border5'>
@@ -194,7 +196,6 @@ function HomePage() {
         </div>
       </section>
       <section className='Connect'>
-
       </section>
     </div> 
   );
