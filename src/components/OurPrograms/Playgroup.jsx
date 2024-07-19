@@ -1,5 +1,5 @@
 import React from 'react';
-import './pygroup.css';
+import './Playgroup.css';
 
 const Playgroup = () => {
   return (

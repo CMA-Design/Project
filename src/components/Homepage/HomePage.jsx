@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../fonts/OstrichSans-Heavy.otf';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
 
@@ -165,13 +166,20 @@ function HomePage() {
         <h1>Nurturing a Vibrant Community</h1>
         <p>We instill in each child a love for learning, curiosity, and a foundation for lifelong success. Our unique blend of the play way method and Montessori approach creates a joyful, engaging, and meaningful learning environment where children thrive, explore, and develop a lifelong love for learning.</p>
         <div className='Border3'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="1370" height="1100" viewBox="0 0 1920 121" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1372" height="1100" viewBox="0 0 1920 121" fill="none">
             <path d="M790.558 6.8392C864.57 2.98486 911.838 1.13479 956.319 0.363922C1005.44 -0.484032 1082.52 1.05771 1125.79 3.75574C1173.81 6.68502 1180.77 7.76418 1185.97 13.2373C1188.94 16.2437 1192.1 17.7854 1197.58 18.6334C1199.25 18.9417 1218.29 19.8668 1239.83 20.7147C1426.49 28.0379 1492.51 32.5089 1536.25 40.9114C1550.18 43.5323 1559.75 47.3096 1558.63 49.7763C1558.35 50.393 1558.54 50.6243 1559 50.393C1559.56 50.1618 1559.93 50.4701 1559.93 51.1639C1559.93 55.712 1585.01 60.0289 1670.9 70.4356C1689.2 72.6711 1743.06 80.1485 1754.95 82.0756C1772.87 85.082 1787.45 88.1655 1803.42 92.4052C1826.08 98.3409 1903.06 113.845 1903.89 113.074C1910.24 114.877 1921.73 118.202 1924.28 120.022L1901.67 120.156H1426.16H950.655C-0.269043 120.156 -1.83782 122.004 -1.55923 120.231C-1.3735 118.843 4.93101 114.76 27.2183 105.51C67.9854 88.5509 109.217 74.3669 151.656 62.881C216.567 45.3053 248.605 40.9114 283.522 44.9199C290.208 45.6908 297.266 46.0762 299.309 45.7678C301.352 45.5366 310.545 43.6094 319.739 41.5281C419.474 18.7105 553.012 4.44952 656.834 5.45164C685.529 5.75999 687.85 5.83707 693.794 7.45589C699.923 9.22887 715.059 10.6935 721.374 10.2309C723.139 10.0768 733.168 9.61426 743.661 9.15174C754.155 8.68922 775.235 7.61005 790.558 6.8392Z" fill="#316ADF"/>
           </svg>
         </div>
       </section>
       <section className='Our_Programs'>
-
+        <div className='Box' style={{ width: '1352px', height: '1000px', backgroundColor: '#316ADF' }} />
+        <button className="ourP-button" onMouseOver={()=>{setIsHovered(true)}} onMouseOut={()=>{setIsHovered(false)}}>
+          <span className="ourP-text">OUR PROGRAMS</span>
+        </button>
+        <div className='PC1'>
+          <img src="pc1.png" alt="IMG 1" className='IP1'/>
+          <li className='HP1' style={{fontSize: '40px', listStyle: 'none', colour: 'black'}}><a href='../OurPrograms/Playgroup'>PLAYGROUP</a></li>
+        </div>
       </section>
       <section className='AS_Programs'>
         <div className='Border4'>
