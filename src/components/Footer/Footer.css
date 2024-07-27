@@ -12,6 +12,7 @@
   
   .footer-brand {
     flex: 1;
+    width:1px;
   }
   
   .footer-nav,
