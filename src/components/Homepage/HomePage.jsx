@@ -178,7 +178,7 @@ function HomePage() {
         </button>
         <div className='PC1'>
           <img src="pc1.png" alt="IMG 1" className='IP1'/>
-          <li className='HP1'><a href='../OurPrograms/Playgroup'>PLAYGROUP</a></li>
+          <li className='HP1'><Link to={'/Playgroup'}>PLAYGROUP</Link></li>
         </div>
         <div className='PC2'>
           <img src="pc2.png" alt="IMG 2" className='IP2'/>
