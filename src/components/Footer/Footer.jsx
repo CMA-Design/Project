@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-brand">
-          <img src="favicon.ico" alt="Cheerful Mind Academy" />
+          <img src="logo.svg" alt="Cheerful Mind Academy" />
         </div>
         <nav className="footer-nav">
           <ul>
