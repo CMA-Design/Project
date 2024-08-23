@@ -1,24 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 /* Header styles */
 .header {
+  background-color: #FCEDA9;
+  height: 9.5vh;
+  padding: 20px;
+  z-index: 9;
+  position:fixed;
+  top: 0;
+  color: #E63747;
+  /* padding: 1rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fceda9;
-  width: 100%; /* Full width */
-  box-sizing: border-box;
+  font-family: 'Public Sans';
+  width: 100%; /* Make the header take the full width */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* added position relative to logo */
+  margin-right: 0;
 }
 
 .logo img {
-  height: 50px;
+  /* width: 98.43px; */
+  /* height: 70.6px; */
+  height: 10.5vh;
+  transform: translateY(-5%);
+  flex-shrink: 0;
 }
-
-.title h1 {
+.title{
+  background-color: #FCEDA9;
+  top:60%;
+  margin-left: 0;
+  font-size: medium; 
+  font-weight: bold;
   margin: 0;
+  font-family: 'Life is Goofy';
 }
 
-nav ul {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Public Sans';
+  margin-top: 1px;
+}
+
+.nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -26,14 +57,16 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li {
-  margin-left: 20px;
+.nav li {
+  margin-right: 8px;
 }
 
-nav a {
-  text-decoration: none;
+.nav a {
   color: #E63747;
+  text-decoration: none;
+  font-family: 'Public Sans';
 }
+
 
 /* Global styles */
 body {
@@ -44,17 +77,19 @@ body {
   background-color: #FCEDA9;
 }
 
-.container {
-  max-width: 685px;
+/* .container {
+  max-width: 685px; 
   margin: 40px auto;
   padding: 0px;
   margin-left: 320px;
   background-color: #FCEDA9;
-}
+} */
 
 /* Hero section styles */
 .hero {
-  /* background-image: #fceda9; */
+  background-image: #fceda9;
+  width:0;
+  height:0;
   padding: 0px;
   text-align: center;
 }
@@ -66,7 +101,9 @@ body {
   margin-top: 0;
   letter-spacing: -2px;
   line-height:0.8;
-  margin-left: 10px;
+  text-align: center;
+  /* margin-left: 10px; */
+
 }
 
 .content{
@@ -82,7 +119,7 @@ body {
   justify-content: center;
 }
 
-.image{
+/* .image{
   width: 280px;
 }
 
@@ -109,21 +146,21 @@ body {
   position: absolute;
   bottom: -70px;
   left: 100px;
-  width: 290px;
+  width: 290px; */
   /* height: 360px; */
-  rotate: -3.8deg;
+  /* rotate: -3.8deg;
   transform: translate(-40px,80px);
 }
 
 .image-bottom-right{
   z-index: 0;
   position: absolute;
-  bottom: -160px;
+  bottom: -160px; */
   /* rotate: -4.4deg; */
-  right: 90px;
+  /* right: 90px;
   width: 290px;
   transform: translate(-0.3px,-10px);
-}
+} */
 
 .Border{
   margin-left: -320px;
@@ -475,10 +512,28 @@ body {
   border-radius: 18px;
 }
 
-.HP1{
-  list-style: none;
+.HC1 {
   font-size: 40px;
+  color: rgb(240, 233, 233);
+  border-radius: 20%;
+  border-color: white;
+}
+
+/* Targeting the link within the HC1 class */
+.HC1 a {
   color: white;
+  text-decoration: none; /* Removes underline */
+  border: 1px solid white; /* Adds a white border */
+  padding: 5px; /* Optional: Adds some padding inside the border */
+}
+
+.HC1 a:visited {
+  color: white; /* Ensures visited links are also white */
+}
+
+.HC1 a:hover {
+  color: rgb(82, 79, 79); /* Ensures hovered links are also white */
+  border-color: white; /* Ensures border color remains white on hover */
 }
 
 .PC2{
@@ -602,9 +657,10 @@ body {
 }
 
 .Line{
-  margin-top:-860px;
+  /* margin-top:-860px;
   margin-left: -310px;
-  max-width: 1329px;
+  max-width: 1329px; */
+  width: 100vw;
 }
 
 /* Responsive styles for smaller screens */
