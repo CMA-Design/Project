@@ -49,43 +49,25 @@ function HomePage() {
   }
 
    return (
-    <header className="header">
-      <div className="logo">
-        <img src="favicon.ico" alt="Cheerful Mind Academy Logo" />
-        <div className="title">
-          <h1
-            style={{
-              color: 'var(--accent-main, #E63747)',
-              textAlign: 'left',
-              fontFamily: 'Life is Goofy',
-              fontSize: '34.296px',
-              fontStyle: 'normal',
-              fontWeight: 700,
-              lineHeight: 'normal',
-              letterSpacing: '-0.86px'
-            }}>CHEERFUL MIND ACADEMY</h1>
+    <div className='HomePage'>
+      <header className="header">
+        <div className="logo">
+          <img src="favicon.ico" alt="Cheerful Mind Academy Logo" />
+          <div className="title">
+            <h1> CHEERFUL MIND ACADEMY</h1>
+          </div>
         </div>
-      </div>
-      <nav className="nav">
-        <ul style={{
-          color: 'var(--accent-main, #E63747)',
-          textAlign: 'center',
-          fontFamily: 'Public Sans',
-          fontSize: '17px',
-          fontStyle: 'normal',
-          fontWeight: 700,
-          lineHeight: 'normal',
-          letterSpacing: '-0.7px',
-          wordSpacing: '-1.2px',
-        }}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/our-programs">Our Programs</a></li>
-          <li><a href="/after-school-programs">After School Programs</a></li>
-          <li><a href="/testimonials">Testimonials</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav className="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/our-programs">Our Programs</a></li>
+            <li><a href="/after-school-programs">After School Programs</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>  
+    </div>
   //       <section className="hero">
   //         <div className='image'>
   //          <img src="img1.png" alt="Image 1" className="image-top-left" />
