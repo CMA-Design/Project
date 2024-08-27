@@ -44,13 +44,15 @@
   width: 280px;
 }
 
-.image-top-left{
+.image-top-left {
   position: absolute;
-  top: 45px;
-  left: 17.6px;
-  width: 356px;
-  transform: translate(-0.3px,10px);
-  z-index:0;
+  flex-wrap: wrap;
+  top: 6.5vh;
+  left: 3.5vw;
+  width: 25vw;
+  transform: translate(-0.3vw, 1vh);
+  object-fit: cover;
+  height: auto;
 }
 
 .image-top-right{
@@ -59,7 +61,6 @@
   right:40px;
   width: 336px;
   transform: translate(-0.1px,2px);
-  z-index:0;
 }
 
 .image-bottom-left{

@@ -66,12 +66,14 @@ function HomePage() {
             <li><a href="/gallery">Gallery</a></li>
           </ul>
         </nav>
-      </header>  
+      </header>
+      <section className='Part1'>
+        <img src="img1.png" alt="Image 1" className="img1" />
+        <img src="img2.png" alt="Image 2" className="img2" />
+      </section>
     </div>
   //       <section className="hero">
   //         <div className='image'>
-  //          <img src="img1.png" alt="Image 1" className="image-top-left" />
-  //            <img src="img2.png" alt="Image 2" className="image-top-right" />
   //          </div>
   //          <div className="banner">
   //            <h3>CHEERFUL MIND ACADEMY</h3>
