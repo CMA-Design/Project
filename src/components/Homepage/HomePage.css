@@ -203,6 +203,7 @@ body {
   align-items: center;
   margin-top: -1250px;
   z-index: 0;
+  justify-content: space-between;
 }
 
 .arrow {
@@ -220,7 +221,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   opacity: 0;
-  transition: opacity 0.3s ease; /* Add a transition duration for the opacity property */
+  /* transition: opacity 0.3s ease;  */
   font-size: 30px;
   font-weight: bold;
   color: #E63747;
@@ -238,17 +239,17 @@ body {
   /* border: 2px solid #e63747;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
-  animation: appear 0.5s forwards;
+  animation: appear 2.2s forwards;
 }
 
 @keyframes appear {
   0% {
     opacity: 0;
-    transform: translateX(-10px);
+    /* transform: translateX(-10px); */
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
 }
 

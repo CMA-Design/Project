@@ -99,7 +99,7 @@ function HomePage() {
           {isHovered && (
             <div className="arrow-text">
               {Array.from("LET'S").map((letter, index) => (
-                <span key={index} className="left-text" style={{ animationDelay: `${index * 0.1}s` }}>
+                <span key={index} className="left-text" >
                   {letter}
                 </span>
               ))}
@@ -113,7 +113,7 @@ function HomePage() {
           {isHovered && (
             <div className="arrow-text">
               {Array.from("BEGIN").map((letter, index) => (
-                <span key={index} className="right-text" style={{ animationDelay: `${index * 0.1}s` }}>
+                <span key={index} className="right-text">
                   {letter}
                 </span>
               ))}
