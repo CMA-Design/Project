@@ -279,12 +279,12 @@ body {
 }
 
 .Border2{
-  margin-top:-1100px;
+  margin-top:-1000px;
   z-index: -10;
   /* margin-left: -383px; */
 }
 .Border2 svg{
-
+  width: 1500px;
 }
 
 .welcome h2 {
@@ -327,7 +327,7 @@ body {
   display: inline-block;
   font-family: 'Ostrich Sans';
   z-index: 2;
-margin-top: -1050px; /* Adjust as needed */
+margin-top: -1000px; /* Adjust as needed */
   /* margin-left: -78px; */
  /* Adjust as needed */
 }
@@ -492,6 +492,12 @@ margin-top: -1050px; /* Adjust as needed */
   /* margin-left: -325px; */
 }
 
+.Our_Programs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ourP-button {
   background-color: #173683; /* Same as background color */
   border: 3px 10px 10px 3px solid black; /* Use your button border color */
@@ -507,7 +513,7 @@ margin-top: -1050px; /* Adjust as needed */
   z-index: 2;
   letter-spacing: 1.2px;
   box-shadow: 5px 5px 1px black;
-  margin-top: -950px; /* Adjust as needed */
+  margin-top: -450px; /* Adjust as needed */
   /* margin-left: -84px; */
   line-height: 0.6;
   margin-bottom: 10px; /* Adjust as needed */
@@ -535,7 +541,7 @@ margin-top: -1050px; /* Adjust as needed */
   position: absolute;
   width:400px;
   height: 250px;
-  margin-top: -820px;
+  margin-top: -320px;
   /* margin-left: -200px; */
   border-radius: 20px;
 }
@@ -559,7 +565,10 @@ margin-top: -1050px; /* Adjust as needed */
 }
 
 .Line{
-  margin-top:-860px;
+  margin-top:-940px;
+  position: absolute;
+  left: 0;
   /* margin-left: -310px; */
-  max-width: 1329px;
+  max-width: 100%;
+  z-index: -100;
 }
