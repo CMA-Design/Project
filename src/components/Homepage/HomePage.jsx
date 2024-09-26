@@ -29,7 +29,7 @@ function HomePage() {
         src="Frame 24.png"
         alt="Next Arrow"
         className={className}
-        style={{ ...style, display: 'block', margin: '90 auto', width: '80px', height: '100px', marginRight: '-64px' }}
+        style={{ ...style, display: 'block', width: '80px', height: '100px', marginRight: '-61px' }}
         onClick={onClick}
       />
     );
@@ -42,7 +42,7 @@ function HomePage() {
         src="Frame 23.png"
         alt="Previous Arrow"
         className={className}
-        style={{ ...style, display: 'block', margin: '0 auto', width: '80px', height: '100px', marginLeft: '-40px' }}
+        style={{ ...style, display: 'block', margin: '0 auto', width: '80px', height: '100px', marginLeft: '-62px' }}
         onClick={onClick}
       />
     );
@@ -59,15 +59,15 @@ function HomePage() {
         </div>
         <nav className="nav">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/our-programs">Our Programs</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#ourProgram">Our Programs</a></li>
             <li><a href="/after-school-programs">After School Programs</a></li>
             <li><a href="/testimonials">Testimonials</a></li>
             <li><a href="/gallery">Gallery</a></li>
           </ul>
         </nav>
       </header>
-      <section className="hero">
+      <section className="hero" id='hero'>
         <div className='image'>
           <img src="img1.png" alt="Image 1" className="image-top-left" />
           <div className="banner">
@@ -86,9 +86,10 @@ function HomePage() {
         </div>
         
         <div className='Border'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1101" viewBox="0 0 1920 1101" fill="none">
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1101" viewBox="0 0 1920 1101" fill="none">
             <path d="M122.437 42.3259C97.0395 44.5734 28.8182 35.6524 -2.11774 30.9109L2.83718e-05 1100.05H1922.7L1920 26.0616C1925.36 25.363 1695.19 25.4328 1660.26 31.3013C1616.59 38.6369 1461.9 48.9407 1366.77 40.6396C1290.67 33.9987 1084.91 24.7994 991.545 21.0299C967.74 21.1361 911.204 23.8992 875.497 34.1012C839.79 44.3032 797.707 49.6167 781.128 50.9983C749.566 54.2927 671.967 54.3139 614.071 28.0438C556.174 1.77365 487.519 -0.630809 460.428 1.45073C448.029 4.50325 406.778 13.3237 325.031 19.7985C160.059 25.5948 154.465 36.707 122.437 42.3259Z" fill="#FFCA32" />
-          </svg>
+          </svg> */}
+          <img src="Vector2.png" alt="" width=''/>
         </div>
         <div className="arrowbox">
         <div
@@ -124,9 +125,10 @@ function HomePage() {
       </section>
       <section className="welcome">
         <div className='Border2'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1100" viewBox="0 0 1920 1128" fill="none">
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1100" viewBox="0 0 1920 1128" fill="none">
             <path d="M125.135 1089.09C99.7374 1087 31.5162 1095.29 0.580243 1099.69L0 0.0490723H1922.7V1104.2C1928.05 1104.85 1697.89 1104.78 1662.96 1099.33C1619.29 1092.52 1464.59 1082.94 1369.47 1090.65C1293.37 1096.82 1087.61 1105.37 994.243 1108.87C970.438 1108.77 913.902 1106.21 878.195 1096.73C842.488 1087.25 800.405 1082.31 783.826 1081.03C752.264 1077.97 674.665 1077.95 616.769 1102.36C558.872 1126.76 490.217 1129 463.126 1127.06C450.727 1124.23 409.476 1116.03 327.729 1110.02C162.757 1104.63 157.163 1094.31 125.135 1089.09Z" fill="#FFCA32" />
-          </svg>
+          </svg> */}
+          <img src="Vector.png" alt="" />
         </div>
         <button className="welcome-button" onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
           <span className="welcome-text">WELCOME</span>
@@ -190,7 +192,7 @@ function HomePage() {
           </svg>
         </div>
       </section>
-      <section className='Our_Programs'>
+      <section className='Our_Programs' id='ourProgram'>
         <div className='Box' style={{ width: '100%', height: '1000px', backgroundColor: '#316ADF' }} />
         <button className="ourP-button" onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
           <span className="ourP-text">OUR PROGRAMS</span>

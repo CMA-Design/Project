@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 /* Global styles */
+*{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Ostrich Sans';
   margin: 0;
   padding: 0;
   max-width: fit-content;
   background-color: #FCEDA9;
+  
 }
 
 /* Header styles */
@@ -117,6 +121,7 @@ body {
   /* background-image: #fceda9; */
   padding: 0px;
   text-align: center;
+
 }
 
 .banner {
@@ -192,9 +197,9 @@ body {
   transform: translate(-0.3px,-10px);
 }
 
-.Border{
-  margin-left: -320px;
-  margin-top: -10px;
+.Border img{
+  width: 1473px;
+  height: 800px;
 }
 
 .arrow-button {
@@ -275,22 +280,23 @@ body {
   align-items: center;
   max-width: 100%;
   max-height: 100px;
+  margin-top: 100px;
 
 }
 
 .Border2{
-  margin-top:-1000px;
-  z-index: -10;
-  /* margin-left: -383px; */
+  margin-top:-850px;
+
 }
-.Border2 svg{
-  width: 1500px;
+.Border2 img{
+  width: 1473px;
+  height: 750px;
 }
 
 .welcome h2 {
   font-size: 79.5px;
   margin-bottom: 10px;
-  margin-top: -960px;
+  margin-top: -700px;
   color:#E63747;
   text-align: left;
   letter-spacing: -2.5px;
@@ -307,7 +313,6 @@ body {
   line-height: -1.5;
   letter-spacing: -0.22px;
   width:1100px;
-
   font-family:'Public Sans';
 }
 
@@ -327,7 +332,7 @@ body {
   display: inline-block;
   font-family: 'Ostrich Sans';
   z-index: 2;
-margin-top: -1000px; /* Adjust as needed */
+  margin-top: -900px; /* Adjust as needed */
   /* margin-left: -78px; */
  /* Adjust as needed */
 }
@@ -355,23 +360,22 @@ margin-top: -1000px; /* Adjust as needed */
   /* margin-left: -345px; */
 }
 
-.slick-prev {
-  left: -50px;
-  margin-left: 0;
-}
-
-.slick-next {
-  right: -50px;
-  margin-right: 0;
-}
 
 .Cards{
-  width: 1200px;
+  width: 1300px;
   display: block;
   /* margin-left: -300px; */
   margin-top: 80px;
   justify-content: space-between;
   flex-wrap:wrap;
+  font-style: Public Sans;
+}
+
+.Cards div h4{
+  font-size: 27px;
+}
+.Cards div p{
+  font-size: 14px;
 }
 
 .Card {
