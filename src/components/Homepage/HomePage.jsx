@@ -20,6 +20,18 @@ function HomePage() {
     slidesToScroll: 4,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
+    responsive: [
+     
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  
+  
   }
 
   function CustomNextArrow(props) {
@@ -28,7 +40,7 @@ function HomePage() {
       <img
         src="Frame 24.png"
         alt="Next Arrow"
-        className={className}
+        className={`custom-arrow custom-next-arrow hide-on-small-screen ${className}`}      
         style={{ ...style, display: 'block', width: '80px', height: '100px', marginRight: '-61px' }}
         onClick={onClick}
       />
@@ -41,7 +53,7 @@ function HomePage() {
       <img
         src="Frame 23.png"
         alt="Previous Arrow"
-        className={className}
+        className={`custom-arrow custom-prev-arrow hide-on-small-screen ${className}`}
         style={{ ...style, display: 'block', margin: '0 auto', width: '80px', height: '100px', marginLeft: '-62px' }}
         onClick={onClick}
       />
@@ -172,12 +184,10 @@ function HomePage() {
         </button>
         <h1>Nurturing a Vibrant Community</h1>
         <p>We instill in each child a love for learning, curiosity, and a foundation for lifelong success. Our unique blend of the play way method and Montessori approach creates a joyful, engaging, and meaningful learning environment where children thrive, explore, and develop a lifelong love for learning.</p>
-        <div className='Border3'>
-          <img src="Border3.png" alt="Border3"/>
-        </div>
+       
       </section>
       <section className='Our_Programs' id='ourProgram'>
-        <div className='Box' style={{ width: '100%', height: '1000px', backgroundColor: '#316ADF' }} />
+        <div className='' style={{ width: '100%', height: '1000px', backgroundColor: '' }} />
         <button className="ourP-button" onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
           <span className="ourP-text">OUR PROGRAMS</span>
         </button>

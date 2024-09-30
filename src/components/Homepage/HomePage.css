@@ -246,7 +246,7 @@ body {
 }
 
 .welcome h2 {
-  font-size: 79.5px;
+  font-size: 50px;
   margin-bottom: 10px;
   margin-top: -700px;
   color:#E63747;
@@ -325,6 +325,25 @@ body {
   flex-wrap:wrap;
   font-style: Public Sans;
 }
+@media screen and (max-width: 1024px) {
+  .Cards{
+  width : 1000px;
+  margin: 40px;
+  
+  }
+  .ourP-button {
+    margin-top: -350px;
+  }
+
+  .welcome h2 {
+width : 800px;
+text-align: center;
+}
+.welcome p{
+  width: 800px;
+}
+
+}
 
 .Cards div h4{
   font-size: 27px;
@@ -344,6 +363,7 @@ body {
   border-color: black;
   max-width: 250px;
   height: 310px;
+
 }
 
 .Card h4{
@@ -477,6 +497,8 @@ body {
   line-height: 0.6;
   margin-bottom: 10px; /* Adjust as needed */
 }
+
+
 
 .ourP-button:hover {
   background-color: #173683; /* Change background on hover */
@@ -628,4 +650,28 @@ body {
 .footer-copyright a {
   color: #eee;
   text-decoration: none;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .hide-on-small-screen {
+    display: none;
+  }
+}
+
+.custom-arrow {
+  display: block;
+  width: 80px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.custom-next-arrow {
+  margin-right: -61px;
+}
+
+.custom-prev-arrow {
+  margin-left: -62px;
 }
