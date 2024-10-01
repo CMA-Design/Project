@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
+/*@font-face {
+  font-family: 'Lifeisgoofy';
+  src: url('/fonts/life.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}/*
+.custom-font {
+  font-family: 'Lifeisgoofy', sans-serif;
+}
 /* Global styles */
 *{
   scroll-behavior: smooth;
@@ -50,7 +59,7 @@ body {
   top:60%;
   margin-left: 0;
   margin: 0;
-  font-family: 'Life is Goofy';
+  font-family: 'CustomFont';
   color: var(--accent-main, #E63747);
   text-align: left;
   font-size: 18px;
@@ -331,9 +340,7 @@ body {
   margin: 40px;
   
   }
-  .ourP-button {
-    margin-top: -350px;
-  }
+
 
   .welcome h2 {
 width : 800px;
@@ -400,6 +407,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height:800px;
 
 }
 
@@ -423,7 +431,26 @@ text-align: center;
   line-height: 0.6;
  /* Adjust as needed */
 }
-
+.ourp-button-green {
+  background-color: #237560; /* Same as background color */
+  border: 3px 10px 10px 3px solid black; /* Use your button border color */
+  border-radius: 102px; /* Adjust as needed */
+  padding: 10px 18px; /* Adjust as needed */
+  font-size: 30px;
+  color: white; /* Use your button text color */
+  text-decoration: none;
+  font-family: 'Ostrich Sans';
+  transition: all 2.5s ease; /* Add a smooth transition */
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  letter-spacing: 1.2px;
+  box-shadow: 5px 5px 1px black;
+ /* Adjust as needed */
+  /* margin-left: -100px; */
+  line-height: 0.6;
+ /* Adjust as needed */
+}
 .ourp-button:hover {
   background-color: #F46020; /* Change background on hover */
   color: white; /* Change text color on hover */
@@ -432,7 +459,6 @@ text-align: center;
 
 .ourp-text {
   position: relative;
-  z-index: 1;
   transition: all 0.3s ease; /* Add a smooth transition */
 }
 
@@ -444,7 +470,7 @@ text-align: center;
   font-size:114px;
   color: #E63747;
   line-height: 0.9;
-  width: 800px;
+  width: 1400px;
   /* margin-left: -50px; */
   justify-content: center;
   letter-spacing: -3px;
@@ -455,11 +481,11 @@ text-align: center;
   font-family: 'Public Sans';
   text-wrap: 10px;
   color: #237560;
-  margin-top: -30px;
+  margin-top: px;
   margin-bottom: 20px;
   line-height: -1.5;
   letter-spacing: -0.22px;
-  width: 1150px;
+  width: 1400px;
   /* margin-left: -240px; */
   flex-wrap: wrap;
   font-weight:600;
@@ -475,6 +501,8 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #316ADF;
+  height:1120px;
 }
 
 .ourP-button {
@@ -492,7 +520,7 @@ text-align: center;
   z-index: 2;
   letter-spacing: 1.2px;
   box-shadow: 5px 5px 1px black;
-  margin-top: -450px; /* Adjust as needed */
+   /* Adjust as needed */
   /* margin-left: -84px; */
   line-height: 0.6;
   margin-bottom: 10px; /* Adjust as needed */
@@ -527,12 +555,7 @@ text-align: center;
   border-radius: 20px;
 }
 
-.IP1{
-  width:390px;
-  height: 200px;
-  margin-top: 1px;
-  border-radius: 18px;
-}
+
 
 .PC2{
   background-color: aqua;
@@ -545,12 +568,7 @@ text-align: center;
   border-radius: 20px;
 }
 
-.IP2{
-  width:390px;
-  height: 200px;
-  margin-top: 1px;
-  border-radius: 18px;
-}
+
 
 .PC3{
   background-color: aqua;
@@ -561,13 +579,6 @@ text-align: center;
   margin-top: -320px;
   /* margin-left: -200px; */
   border-radius: 20px;
-}
-
-.IP3{
-  width:390px;
-  height: 200px;
-  margin-top: 1px;
-  border-radius: 18px;
 }
 
 .PC4{
@@ -581,16 +592,78 @@ text-align: center;
   border-radius: 20px;
 }
 
-.IP4{
-  width:390px;
-  height: 200px;
-  margin-top: 1px;
-  border-radius: 18px;
+
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 200px; /* Space between the divs */
+  padding-bottom: 50px;
+}
+
+.images div {
+   /* Blue background similar to the image */
+  width: 342px; /* Width for each item */
+  height:327px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  
+border: 5px solid #0F2043;
+border-radius: 32px;
+
+  
+}
+
+.images div img {
+  width: 342px;
+  height:217px;
+  border-radius: 30px 30px 0px 0px; /* Rounded top corners for images */
+  z-index:1;
+}
+
+.images li {
+  font-size: 24px; /* Adjusting font size */
+  list-style: none;
+  color: #FFFFFF; /* White text */
+  
+  background-color: #173683;
+  width: 342px;
+  height:105px;
+  border-radius: 20px;
+  
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  
+}
+/* Frame 32 */
+
+/*position: absolute;
+width: 515px;
+height: 110px;
+left: 5px;
+top: 193px;
+
+background: #173683;
+border-radius: 10px;*/
+
+.images a {
+  text-decoration: none;
+  color: white; /* White link color */
+  font-weight: bold;
+}
+
+.images a:hover {
+  color: #ffcc00; /* Hover effect color */
 }
 
 
+
 .Border4{
-  margin-top:-170px;
+  margin-top:px;
   z-index: 3;
   /* margin-left: -325px; */
 }
@@ -598,6 +671,11 @@ text-align: center;
 .Border5{
   margin-top:-150px;
   /* margin-left: -320px; */
+}
+.border_1{
+  width: 99%;
+  
+
 }
 
 .Line{
@@ -659,6 +737,10 @@ text-align: center;
   .hide-on-small-screen {
     display: none;
   }
+
+  .Our_Philosophy p{
+    width:900px;
+  }
 }
 
 .custom-arrow {
@@ -675,3 +757,130 @@ text-align: center;
 .custom-prev-arrow {
   margin-left: -62px;
 }
+
+
+/*<footer className='footer'>
+        <div className="container">
+          <div className="footer-brand">
+            <img src="logo.svg" alt="Cheerful Mind Academy" />
+          </div>
+          <nav className="footer-nav">
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div className="footer-contact">
+            <p>
+              4&5, Vidhyut-C & D, Ground Floor. ISS Road. Opp.St. Xavier Street.
+              Thakurdwar, Mumbai-400002
+            </p>
+            <p>
+              <a href="tel:9987450006">9987450006</a>,{' '}
+              <a href="tel:9987450002">9987450002</a>
+            </p>
+          </div>
+          <div className="footer-copyright">
+            <p>Copyright 2024 Cheerful Mind Academy All Rights Reserved.</p>
+            <p>
+              <a href="#">Privacy Policy</a> &nbsp;
+              <a href="#">Terms & Conditions</a>
+            </p>
+          </div>
+        </div>
+      </footer>*/
+
+      /* Frame 16 */
+
+/*box-sizing: border-box;
+
+position: absolute;
+width: 308px;
+height: 525px;
+left: 3px;
+top: 315px;
+
+background: #FCEDA9;
+border: 5px solid #0F2043;
+border-radius: 32px;
+transform: rotate(-90deg);
+
+
+/* little-girl-doing-speech-therapy-clinic 1 */
+
+/*position: absolute;
+width: 538px;
+height: 357px;
+left: -3px;
+top: -36px;
+
+background: url(little-girl-doing-speech-therapy-clinic.jpg);
+
+
+/* Frame 32 */
+
+/*position: absolute;
+width: 515px;
+height: 110px;
+left: 5px;
+top: 193px;
+
+background: #173683;
+border-radius: 10px;
+
+
+/* PRE-NUrsery */
+
+/*position: absolute;
+width: 256px;
+height: 52px;
+left: calc(50% - 256px/2);
+top: calc(50% - 52px/2);
+
+font-family: 'Ostrich Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 60px;
+line-height: 52px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 105 */
+
+position: absolute;
+left: 150.79%;
+right: -64.92%;
+top: 3.13%;
+bottom: 88.58%;
+
+border-radius: 60.8px;
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 43.52px;
+height: 43.52px;
+left: 0px;
+top: 0px;
+
+background: #173683;
+
+
+/* Vector */
+
+position: absolute;
+width: 22.46px;
+height: 24.34px;
+left: calc(50% - 22.46px/2 + 11.87px);
+top: calc(50% - 24.34px/2 - 4.47px);
+
+border: 3.744px solid #FFFFFF;
+transform: rotate(45deg);

@@ -1,11 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import './HomePage.css';
-import '../../fonts/Life is goofy.ttf';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../fonts/OstrichSans-Heavy.otf';
 import { Link } from 'react-router-dom';
 
 function HomePage() {
@@ -182,37 +180,73 @@ function HomePage() {
         <button className="ourp-button" onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
           <span className="ourp-text">OUR PHILOSOPHY</span>
         </button>
-        <h1>Nurturing a Vibrant Community</h1>
+        <h1>NURTURING A VIBRANT COMMUNITY</h1>
         <p>We instill in each child a love for learning, curiosity, and a foundation for lifelong success. Our unique blend of the play way method and Montessori approach creates a joyful, engaging, and meaningful learning environment where children thrive, explore, and develop a lifelong love for learning.</p>
        
       </section>
+      
+          <img src="Border3.png" alt="Border4" className='border_1'/>
+      
       <section className='Our_Programs' id='ourProgram'>
-        <div className='' style={{ width: '100%', height: '1000px', backgroundColor: '' }} />
+        <div className='' style={{ width: '100%', height: '110px', backgroundColor: '' }} />
         <button className="ourP-button" onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
           <span className="ourP-text">OUR PROGRAMS</span>
         </button>
+        <div className='images'>
         <div className='Playgroup'>
           <img src="pc1.png" alt="IMG 1" className='IP1' />
-          <li className='HP1' style={{ fontSize: '40px', listStyle: 'none', colour: 'black' }}><a href='../OurPrograms/Playgroup'>PLAYGROUP</a></li>
+          <li className='HP1'><a href='../OurPrograms/Playgroup'>PLAYGROUP</a></li>
         </div>
         <div className='Pre-nursery'>
           <img src="pc2.png" alt="IMG 2"  className='IP2'/>
-          <li className='HP2' style={{fontsize:  '40px', listStyle: 'none', colour: 'black'}}><a href='../OurPrograms/Pre-Nursery'>Pre-Nursery</a></li>
+          <li className='HP2' ><a href='../OurPrograms/Pre-Nursery'>PRE-NURSERY</a></li>
         </div>
+        </div>
+        <div className='images'>
         <div className='Nursery'>
           <img src="pc3.png" alt="IMG 3"  className='IP3'/>
-          <li className='HP3' style={{fontsize:  '40px', listStyle: 'none', colour: 'black'}}><a href='../OurPrograms/Nursery'>Nursery</a></li>
+          <li className='HP3' ><a href='../OurPrograms/Nursery'>NURSERY</a></li>
         </div>
         <div className='Kindergarten'>
-          <img src="pc4.png" alt="IMG 4"  className='IP4'/>
-          <li className='HP4' style={{fontsize:  '40px', listStyle: 'none', colour: 'black'}}><a href='../OurPrograms/Kindergarten'>Kindergarten</a></li>
+          <img src="pc3.png" alt="IMG 4"  className='IP4'/>
+          <li className='HP4' ><a href='../OurPrograms/Kindergarten'>KINDERGARTEN</a></li>
+        </div>
         </div>
       </section>
-      <section className='AS_Programs'>
-        <div className='Border4'>
-          <img src="Border4.png" alt="Border4"/>
+      <section className='Our_Programs' id='ourProgram'>
+        <div className='' style={{ width: '100%', height: '110px', backgroundColor: '' }} />
+        <button className="ourp-button-green" onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
+          <span className="ourP-text">AFTER SCHOOL PROGRAMS</span>
+        </button>
+        <div className='images'>
+        <div className='Playgroup'>
+          <img src="pc1.png" alt="IMG 1" className='IP1' />
+          <li className='HP1'><a href='../OurPrograms/Playgroup'>PLAYGROUP</a></li>
+        </div>
+        <div className='Pre-nursery'>
+          <img src="pc2.png" alt="IMG 2"  className='IP2'/>
+          <li className='HP2' ><a href='../OurPrograms/Pre-Nursery'>PRE-NURSERY</a></li>
+        </div>
+        <div className='Pre-nursery'>
+          <img src="pc2.png" alt="IMG 2"  className='IP2'/>
+          <li className='HP2' ><a href='../OurPrograms/Pre-Nursery'>PRE-NURSERY</a></li>
+        </div>
+        </div>
+        <div className='images'>
+        <div className='Nursery'>
+          <img src="pc3.png" alt="IMG 3"  className='IP3'/>
+          <li className='HP3' ><a href='../OurPrograms/Nursery'>NURSERY</a></li>
+        </div>
+        <div className='Kindergarten'>
+          <img src="pc3.png" alt="IMG 4"  className='IP4'/>
+          <li className='HP4' ><a href='../OurPrograms/Kindergarten'>KINDERGARTEN</a></li>
+        </div>
         </div>
       </section>
+        
+          <img src="Border4.png" alt="Border4" className='border_1'/>
+        
+      
       <section className='Events'>
 
       </section>
@@ -227,40 +261,8 @@ function HomePage() {
       </section>
       <section className='Connect'>
       </section>
-      <footer className='footer'>
-        <div className="container">
-          <div className="footer-brand">
-            <img src="logo.svg" alt="Cheerful Mind Academy" />
-          </div>
-          <nav className="footer-nav">
-            <ul>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div className="footer-contact">
-            <p>
-              4&5, Vidhyut-C & D, Ground Floor. ISS Road. Opp.St. Xavier Street.
-              Thakurdwar, Mumbai-400002
-            </p>
-            <p>
-              <a href="tel:9987450006">9987450006</a>,{' '}
-              <a href="tel:9987450002">9987450002</a>
-            </p>
-          </div>
-          <div className="footer-copyright">
-            <p>Copyright 2024 Cheerful Mind Academy All Rights Reserved.</p>
-            <p>
-              <a href="#">Privacy Policy</a> &nbsp;
-              <a href="#">Terms & Conditions</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      
+      
     </div>
   );
 }
